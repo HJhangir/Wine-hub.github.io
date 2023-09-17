@@ -422,7 +422,7 @@
 
   .all-div1 {
     position: absolute;
-    top: 5%;
+    top: 10%;
     width: 100%;
   }
 
@@ -433,7 +433,7 @@
   
   .txt {
     position: absolute;
-    top: 10%;
+    top: 15%;
     display: flex;
     justify-content: center;
     color: rgb(234, 224, 213);
@@ -444,7 +444,7 @@
   
   .all-div2 {
     position: absolute;
-    top: 25%;
+    top: 30%;
     width: 100%;
   }
   .div2 h1{
