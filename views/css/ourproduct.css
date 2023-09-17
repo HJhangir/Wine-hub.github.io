@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay {
+    background: linear-gradient(0deg, #252525 35%, #1A1B1C 65%);
+    position: fixed;
+    top: 45px;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    z-index: +11;
+  
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow-x: hidden;
+    transition: .4s ease;
+    padding-top: 30px !important;
+  }
+  
+  .overlay a {
+    font-size: 20px;
+    color: var(--i, #bbb);
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s ease;
+    width: 100%;
+  
+  }
+  
+  .overlay a:hover {
+    transform: scaleY(1.5);
+    transition: .2s ease;
+  }
+  
+  .fa-xmark {
+    position: absolute;
+    font-size: 2rem;
+    right: 15px;
+    top: 10px;
+    color: white;
+  }
+  
+  .fa-xmark:hover {
+    transform: rotate(180deg);
+    transition: .5s ease;
+  }
+  
+  .active {
+    width: 25%;
+    padding: 0px 16px;
+  }
+  
+  .nav i{
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.6;
+    padding: 15px 0;
+    gap: 100px;
+  }
+  .nav a {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  .our-product{
+    background-color: #DAB49D;
+    height: 100vh;
+    color: #5E3023;
+  }
+
+  .our-product p{
+    font-family: 'Margarine', cursive;
+    font-size: 400px;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center ;
+    height: 100vh;
+  }
+
+  .sect-2{
+    display: flex;
+    justify-content: space-around;
+    background-color:#DAB49D ;
+    padding-bottom: 50px;
+  }
+
+  .sect-2 p{
+    color: #5E3023;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid rgb(243, 233, 220);
+    background-color:  rgb(243, 233, 220);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .sect3{
+    background-color: rgb(228, 227, 216);
+    height: 317vh;
+    padding-top: 50px;
+  }
+
+  /* .. */
+
+  
+  
+  .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  
+  .sect3 h1,.sect3 h2,.sect3 p {
+    text-align: center;
+  }
+  
+  .established {
+    font-style: italic;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .item{
+    display: flex;
+  }
+  
+  .flavor, .dessert {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .price {
+    width: 50%;
+    text-align: right;
+  }
+  
+  .sect3 hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+    margin-top: 10px;
+  }
+  
+  .sect3 a {
+    color: black;
+  }
+
+  .sect1-5,.sect2-5{
+    display: flex;
+    gap: 10px;
+  }
+  .sect3 h2{
+    padding: 20px 0;
+  }
+  .footer{
+    padding: 20px 0 0 10px;
+    display: flex;
+  }
+@media(max-width:1240px){
+.sect-2{
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+}
+  
+  @media(max-width:957px){
+    .nav {
+      display: flex;
+      justify-content:center ;
+      background-color: black;
+      opacity: .6;
+      padding: 15px 0;
+      gap: 50px; 
+  }
+  }
+
+@media(max-width:900px){
+  .our-product p{
+    font-family: 'Margarine', cursive;
+    font-size: 300px;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center ;
+    height: 100vh;
+  }
+}
+@media(max-width:750px){
+
+.nav a{
+  display: none;
+}
+
+.nav {
+  display: flex;
+  color: white;
+  justify-content: end;
+}
+
+.nav i{
+  display: block;
+  padding-right:20px ;
+}
+.our-product{
+  background-color: #DAB49D;
+  height: 50vh;
+  color: #5E3023;
+}
+.our-product p{
+  font-family: 'Margarine', cursive;
+  font-size: 250px;
+  display: flex ;
+  justify-content: space-around;
+  align-items: center ;
+  height: 50vh;
+}
+}
+
+@media(max-width:630px){
+  .sect-2{
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .sect1-5,.sect2-5{
+    display: block;
+    gap: 10px;
+  }
+  .sect1-5 p,.sect2-5 p{
+    display: block;
+    margin-top: 10px;
+  }
+  .our-product p{
+    font-family: 'Margarine', cursive;
+    font-size: 200px;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center ;
+    height: 50vh;
+  }
+
+}
+
+@media(max-width:465px){
+  .our-product p{
+    font-family: 'Margarine', cursive;
+    font-size: 150px;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center ;
+    height: 50vh;
+  }
+}
+@media(max-width:350px){
+  .our-product p{
+    font-family: 'Margarine', cursive;
+    font-size: 100px;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center ;
+    height: 40vh;
+  }
+  .our-product{
+    background-color: #DAB49D;
+    height: 40vh;
+    color: #5E3023;
+  }
+}
